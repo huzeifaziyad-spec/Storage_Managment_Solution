@@ -33,7 +33,7 @@ export const uploadFile = async ({
     const fileDocument = {
       type: getFileType(bucketFile.name).type,
       name: bucketFile.name,
-      url: constructFileUrl(bucketFile.$id),
+      URL: constructFileUrl(bucketFile.$id),
       extension: getFileType(bucketFile.name).extension,
       size: bucketFile.sizeOriginal,
       owner: ownerId,

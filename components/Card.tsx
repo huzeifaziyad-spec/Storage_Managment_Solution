@@ -7,12 +7,12 @@ import ActionDropdown from "@/components/ActionDropdown";
 
 const Card = ({ file }: { file: Models.Document }) => {
   return (
-    <Link href={file.url} target="_blank" className="file-card">
+    <Link href={file.URL || "/"} target="_blank" className="file-card">
       <div className="flex justify-between">
         <Thumbnail
           type={file.type}
           extension={file.extension}
-          url={file.url}
+          url={file.URL}
           className="!size-20"
           imageClassName="!size-11"
         />
